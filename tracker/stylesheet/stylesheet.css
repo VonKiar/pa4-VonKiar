@@ -1,0 +1,54 @@
+.root {
+    -fx-font-size: 9pt;
+    -fx-font-family: "Comic sans MS";
+    -fx-background: rgb(49, 51, 53);
+}
+#intro {
+    -fx-fill: gold;
+    -fx-stroke-width: 1;
+}
+.axis {
+    -fx-font-size: 1.4em;    
+    -fx-tick-label-fill: gold;
+    -fx-tick-length: 20;
+    -fx-minor-tick-length: 10;
+}
+.axis-label {
+   -fx-text-fill: gold; 
+}
+.chart {
+    -fx-create-symbols: false;
+}
+.chart-series-line {
+    -fx-stroke-width: 3px;
+}
+.chart-legend {
+    -fx-background-color:  rgb(45, 45, 45);
+    -fx-padding: 10px;
+ }
+.chart-legend-item-symbol {
+    -fx-background-radius: 1;
+ }
+.chart-legend-item {
+     -fx-text-fill: gold;
+ }
+#text {
+    -fx-fill: gold;
+    -fx-stroke-width: 1;
+}
+#exit {
+    -fx-background-color: rgb(100, 100, 100);
+    -fx-text-fill: white;
+}
+#exit:hover {
+    -fx-background-color: gold;
+    -fx-text-fill: black;
+    -fx-scale-y: 1.5;
+    -fx-scale-x: 1.5;
+}
+#exit:pressed {
+    -fx-background-color: black;
+    -fx-text-fill: gold;
+    -fx-scale-y: 1.8;
+    -fx-scale-x: 1.8;
+}
