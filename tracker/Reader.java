@@ -9,40 +9,44 @@ import com.opencsv.CSVReader;
 public class Reader {
 
     private String path;
+    private List<String[]> data;
 
     public Reader(String file) {
-        path = file;
+        this.path = file;
+        this.data = new ArrayList<>();
+        read(this.path);
     }
 
-    private List<String[]> read(String sourcefile) {
-        List<String[]> data = new ArrayList<>();
+    private void read(String sourcefile) {
         String[] readLine = null;
         try (CSVReader reader = new CSVReader(new FileReader(sourcefile))) {
-            while((readLine = reader.readNext()) != null) data.add(readLine);
+            while((readLine = reader.readNext()) != null) this.data.add(readLine);
         } catch (Exception e) {System.out.println("Cannot read file: " + sourcefile);}
-        return data;
     }
 
     public String[] getHeader() {
-        return getRow(0);
-    }
-
-    public String[] getRow(int row){
-        return read(this.path).get(row);
-    }
-
-    private List<String> getColumn(int column){
-        List<String[]> data = read(this.path);
-        List<String> index = new ArrayList<>();
-        for(int i = 0; i < data.size(); i++) index.add(data.get(i)[column]);
-        return index;
+        return this.data.get(0);
     }
 
     public List<String> getCountry(){
-        return getColumn(1);
+        List<String> countryList = new ArrayList<>();
+        for(int i = 1; i < this.data.size(); i++) {
+            String region = "";
+            String compoundR = this.data.get(i)[0];
+            if (!compoundR.isBlank()) region = " - " + compoundR;
+            countryList.add(data.get(i)[1] + region);
+        }
+        return countryList;
     }
 
-    public List<String> getState(String country){
-        return getColumn(0);
+    public String[] getData(String country, String region) {
+        for(int i = 1; i < this.data.size(); i++) {
+            if ( !this.data.get(i)[1].equalsIgnoreCase(country)) continue;
+            if (region.isBlank() || region.isEmpty()) return this.data.get(i);
+            else {
+                if (this.data.get(i)[0].equalsIgnoreCase(region)) return this.data.get(i);
+            }
+        }
+        return null;
     }
 }
