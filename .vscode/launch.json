@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - Download",
+            "request": "launch",
+            "mainClass": "tracker.Download",
+            "projectName": "pa4-VonKiar_e716242b"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",
