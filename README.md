@@ -4,14 +4,12 @@
 
 **COVID19 GLOBAL STATUS TRACKING SYSTEM** is an application tracking COVID19 current statuses of total infected cases, total death cases and total recovered cases with up-to-date data tracking from online sources.
 
-Actual PHP Censor versions and release branches:
-
 | Mode            | Status                            | Description |
 | :----------------- | :-------------------------------- | :------------------ |
 | Standard           | Original Edition               | Displays total cases               |
 | Differential       | DLC                            | Displays differentiate values each day|
 
-[![first](tracker/images/firstShot.jpg)](tracker/images/firstShot.jpg)
+<!-- [![first](tracker/images/firstShot.jpg)](tracker/images/firstShot.jpg) -->
 
 * [Requirements](#requirements)
 * [Features](#features)
@@ -50,11 +48,7 @@ Actual PHP Censor versions and release branches:
 cd project-path
 ```
 
-* Add javafx modules and opencsv to our applcation:
-
-```bash
-to be added.
-```
+* Add javafx modules and opencsv to the applcation:
 
 ## Configuration
 
@@ -70,19 +64,14 @@ VSCODE - Adds vmArgs line to include javafx module:
   "vmArgs": "--module-path javafx-path/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
   "projectName": "pa4-VonKiar_e716242b"
 ```
+
 ## How-To-Use
 
-[![htu1](tracker/images/htu.jpg)](tracker/images/htu.jpg)
+[![htu1](tracker/images/htu1.jpg)](tracker/images/htu1.jpg)
 
-[![first](tracker/images/firstShot.jpg)](tracker/images/firstShot.jpg)
+[![htu2](tracker/images/htu2.jpg)](tracker/images/htu2.jpg)
 
-[![first](tracker/images/firstShot.jpg)](tracker/images/firstShot.jpg)
-
-[![first](tracker/images/firstShot.jpg)](tracker/images/firstShot.jpg)
-
-
-
-
+[![htu3](tracker/images/htu3.jpg)](tracker/images/htu3.jpg)
 
 ## References
 
