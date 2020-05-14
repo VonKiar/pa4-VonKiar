@@ -13,7 +13,7 @@
 
 * [Requirements](#requirements)
 * [Features](#features)
-* [Installing](#installing)
+<!-- * [Installing](#installing) -->
 * [Configuration](#configuration)
 * [How-to-use](#how-to-use)
 * [References](#references)
@@ -40,7 +40,7 @@
 
 * Simple design to prevents any confusion while using the application.
 
-## Installing
+<!-- ## Installing
 
 * Change directory to the project's destination:
 
@@ -48,7 +48,7 @@
 cd project-path
 ```
 
-* Add javafx modules and opencsv to the applcation:
+* Add javafx modules and opencsv to the applcation: -->
 
 ## Configuration
 
