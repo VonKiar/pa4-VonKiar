@@ -16,6 +16,7 @@
 <!-- * [Installing](#installing) -->
 * [Configuration](#configuration)
 * [How-to-use](#how-to-use)
+* [JAR](#jar)
 * [References](#references)
 
 ## Requirements
@@ -72,6 +73,16 @@ VSCODE - Adds vmArgs line to include javafx module:
 [![htu2](tracker/images/htu2.jpg)](tracker/images/htu2.jpg)
 
 [![htu3](tracker/images/htu3.jpg)](tracker/images/htu3.jpg)
+
+## JAR
+
+```bash
+  After having meeting with Jim:
+    This project does not need to have JAR file;
+    Part of codes may be same as Sahanon P.;
+```
+
+
 
 ## References
 
