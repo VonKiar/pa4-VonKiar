@@ -13,12 +13,11 @@ Actual PHP Censor versions and release branches:
 
 [![first](tracker/images/firstShot.jpg)](tracker/images/firstShot.jpg)
 
-More [screenshots](docs/en/screenshots.md).
-
 * [Requirements](#requirements)
 * [Features](#features)
 * [Installing](#installing)
 * [Configuration](#configuration)
+* [How-to-use](#how-to-use)
 * [References](#references)
 
 ## Requirements
@@ -59,40 +58,34 @@ to be added.
 
 ## Configuration
 
-There are several ways to set up the project:
+Adds javafx & opencsv to JAVA Dependencies:
 
-* Add project without any project config (Runs "zero-config" plugins, including: Composer, TechnicalDebt, PHPLoc, 
-PHPCpd, PHPCodeSniffer, PHPMessDetector, PHPDocblockChecker, PHPParallelLint, PHPUnit and Codeception);
-
-* Similar to [Travis CI](https://travis-ci.org), to support PHP Censor in your project, you simply need to add a 
-`.php-censor.yml` file to the root of your repository;
-
-* Add project config in PHP Censor project page (And it will cancel file config from project repository);
-
-The project config should look something like this:
+VSCODE - Adds vmArgs line to include javafx module:
 
 ```yml
-setup:
-  composer:
-    action:    "install"
-    directory: "."
-test:
-  php_unit:
-    config: "phpunit.xml"
-  php_mess_detector:
-    allow_failures: true
-  php_code_sniffer:
-    standard: "PSR2"
-  php_cpd:
-    allow_failures: true
-complete:
-  email:
-    default_mailto_address: admin@php-censor.local
+  "type": "java",
+  "name": "Debug (Launch)-Tracker<pa4-VonKiar_e716242b>",
+  "request": "launch",
+  "mainClass": "Tracker",
+  "vmArgs": "--module-path javafx-path/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+  "projectName": "pa4-VonKiar_e716242b"
 ```
+## How-To-Use
 
-More details about [configuring project](docs/en/configuring_project.md).
+[![htu1](tracker/images/htu.jpg)](tracker/images/htu.jpg)
+
+[![first](tracker/images/firstShot.jpg)](tracker/images/firstShot.jpg)
+
+[![first](tracker/images/firstShot.jpg)](tracker/images/firstShot.jpg)
+
+[![first](tracker/images/firstShot.jpg)](tracker/images/firstShot.jpg)
+
+
+
+
 
 ## References
 
 The Humanitarian Data Exchange (2020, April 27). [Covid19 csv data](https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases). Retrieved from https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases
+
 Oracle (2014, January). [Javafx chart example](https://docs.oracle.com/javafx/2/charts/line-chart.htm#CIHGBCFI). Retrieved from https://docs.oracle.com/javafx/2/charts/line-chart.htm#CIHGBCFI.
