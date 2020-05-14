@@ -3,21 +3,38 @@ package tracker;
 import java.io.*;
 import java.util.Properties;
 
+/**
+ * Config class, managing properties.
+ * @author Potchara J.
+ * @version FINAL
+ */
 public class Config {
 
+    /** Attributes */
     private static String PROPERTIESFILES= "tracker/properties/covid.properties";
     private static Config instance = null;
     private Properties props = null;
 
+    /**
+     * Constructor, loaf properties file.
+     */
     public Config(){
         loadProperties(PROPERTIESFILES);
     }
 
+    /**
+     * Get instance of the class [Singleton].
+     * @return instance of Config class.
+     */
     public static Config getInstance() {
         if (instance == null) instance = new Config();
         return instance;
     }
 
+    /**
+     * Load Properties.
+     * @param filename read to read and load properties.
+     */
     private void loadProperties(String filename){
         props = new Properties();
         InputStream instream = null;
@@ -42,8 +59,11 @@ public class Config {
         }
     }
 
+    /**
+     * Get properties.
+     * @return properties.
+     */
     public String getProperty(String name) { 
         return props.getProperty(name);
     }
-
 }
