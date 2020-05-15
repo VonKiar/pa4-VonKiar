@@ -13,10 +13,10 @@
 
 * [Requirements](#requirements)
 * [Features](#features)
-<!-- * [Installing](#installing) -->
 * [Configuration](#configuration)
 * [How-to-use](#how-to-use)
 * [References](#references)
+<!-- * [Installing](#installing) -->
 
 ## Requirements
 
